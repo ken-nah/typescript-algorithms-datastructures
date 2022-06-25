@@ -1,0 +1,28 @@
+{
+  "name": "dsa",
+  "version": "1.0.0",
+  "main": "app.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon src/app.ts",
+    "ts-lint": "tsc --noEmit --incremental",
+    "format": "yarn run prettier --write",
+    "prettier": "prettier --ignore-path .gitignore \"**/*.{ts,js}\"",
+    "prepare": "husky install"
+  },
+  "devDependencies": {
+    "@types/node": "^18.0.0",
+    "cz-conventional-changelog": "3.3.0",
+    "husky": ">=6",
+    "lint-staged": ">=10",
+    "nodemon": "^2.0.18",
+    "prettier": "^2.7.1",
+    "ts-node": "^10.8.1",
+    "typescript": "^4.7.4"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
