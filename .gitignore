@@ -4,5 +4,8 @@ node_modules
 # dist
 dist
 
+# testing
+coverage
+
 # typescript
 *.tsbuildinfo
